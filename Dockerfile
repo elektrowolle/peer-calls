@@ -10,5 +10,6 @@ ADD . /usr/src/app
 # Install app dependencies
 RUN npm install
 ENV PORT 5000
+RUN npm run build
 
 CMD [ "npm", "start" ]
